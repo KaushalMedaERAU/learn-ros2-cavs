@@ -12,7 +12,9 @@ wsl --install
 It will ask you to make a default user account. Fill out all necessary info. 
 
 ## Installing Docker
-The simplest way to develop in ROS2 is to launch a docker image with it already installed. For this you'll need to [install docker](https://docs.docker.com/engine/install/ubuntu/). Ensure that you run these commands in your linux or WSL environment.
+The simplest way to develop in ROS2 is to launch a docker image with it already installed. For this you'll need to [install docker](https://docs.docker.com/engine/install/ubuntu/). Ensure that you run these commands in your linux or WSL environment. Next, follow the [post-installation steps](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user) to add your user to the docker group. 
+
+> Note: These pages contain more information than you need to actually complete the step
 
 ## Creating your own Branch
 Open a new linux terminal and navigate to the home directory by running `cd ~`. 
