@@ -49,7 +49,7 @@ def test_speed_increment(speed_setpoint, speed, expected):
         [
             pytest.param(15, 10, id='normal'),
             pytest.param(5, 0, id='minimum'),
-            pytest.param(0, 0, id='below-minimum')
+            pytest.param(0, 0, id='below-minimum', marks=pytest.mark.req('SSM-FR-004'))
         ]
 )
 def test_speed_decrement(speed_setpoint, speed, expected):
